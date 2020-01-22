@@ -1,0 +1,20 @@
+.no-devs {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #acacac;
+  font-weight: 700;
+  height: -webkit-fill-available;
+  animation-delay: 0.8s;
+  animation-duration: 0.55s;
+  animation-timing-function: cubic-bezier(0.65, 0.3, 0.35, 2);
+  transform: translateY(0) scale(0.5);
+}
+
+.no-devs h2 {
+  font-weight: 100;
+  font-size: 4rem;
+  margin: -20px 0 10px;
+}

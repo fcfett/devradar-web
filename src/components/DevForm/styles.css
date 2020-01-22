@@ -1,0 +1,83 @@
+form {
+  margin-top: 30px;
+}
+
+form > .input-block + .input-block {
+  margin-top: 20px;
+}
+
+form fieldset {
+  border: 0;
+}
+
+form fieldset > .input-block + .input-block {
+  margin-top: 20px;
+}
+
+form .input-group {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+form .input-block label {
+  color: #acacac;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+}
+
+form .input-block input {
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  color: #666;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  transition: border-color 0.25s ease-out;
+}
+
+form .input-block input:focus {
+  border-color: #7d40e7;
+}
+
+form .input-block input:invalid {
+  box-shadow: none;
+}
+
+form .input-block input.focused:invalid {
+  border-color: #d42;
+}
+
+form .input-block input:disabled {
+  background-color: inherit;
+  color: #acacac;
+}
+
+form button {
+  width: 100%;
+  border: 0;
+  margin-top: 30px;
+  background-color: #7d40e7;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s ease-out;
+}
+
+form button:disabled {
+  background-color: #acacac;
+  box-shadow: none;
+  cursor: default;
+}
+
+form button:not(:disabled):hover,
+form button:not(:disabled):focus {
+  background-color: #6931ca;
+  box-shadow: 0 4px 14px 2px rgba(0, 0, 0, 0.2);
+}
